@@ -1,0 +1,129 @@
+/* GoldProfitCalculator.css */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f7fb;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 500px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e6ed;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 700;
+}
+
+.form {
+  margin-bottom: 30px;
+}
+
+.form label {
+  display: block;
+  margin: 12px 0 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #dcdfe6;
+  background: #f5f7fa;
+  font-size: 1rem;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="number"]:focus {
+  border: 1px solid #0077ff;
+  outline: none;
+  background: #fff;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0077ff;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005bb5;
+}
+
+.results {
+  background-color: #f1f5f8;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e1e6ec;
+}
+
+.results p {
+  font-size: 1.1rem;
+  margin: 15px 0;
+  font-weight: 500;
+  color: #333;
+}
+
+.results p strong {
+  color: #444;
+}
+
+.results p:last-child {
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+}
+
+.results p:last-child.profit {
+  background-color: #28a745;
+}
+
+.results p:last-child.loss {
+  background-color: #dc3545;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  input[type="number"] {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+}
